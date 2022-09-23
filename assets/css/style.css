@@ -539,6 +539,61 @@
 	background: var(--bs-light);
 }
 
+.post-card .card-header {
+	border: 0;
+	background-color: var(--primary-color);
+	box-shadow: var(--shadow-primary);
+	border-radius: 4px;
+	padding: 10px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.post-card .card-header > a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--bs-white);
+	font-size: 1.1em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.post-card .card-header ul {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.post-card .card-header ul li a {
+	color: var(--bs-gray-300);
+	font-size: .95em;
+}
+
+.post-card .card-header ul li a:hover {
+	color: var(--bs-white);
+	text-decoration: underline;
+}
+
+.post-card .card-header ul li + li {
+	padding-left: 10px;
+}
+
+.post-card .card-header ul li + li:before {
+	margin-right: 8px;
+	vertical-align: middle;
+	content: "";
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 5px;
+	height: 5px;
+	background-color: var(--bs-gray-500);
+	border-radius: 50%;
+	opacity: .5;
+}
+
 /*
 ========== SECTION SIDEBAR ==========
 */
@@ -654,10 +709,6 @@
 
 .sidebar-item .sidebar-image .sidebar-image_icon i:hover {
 	background: var(--primary-hover);
-}
-
-.sidebar-item .sidebar-post {
-	height: 400px;
 }
 
 .sidebar-item .sidebar-post_item {
