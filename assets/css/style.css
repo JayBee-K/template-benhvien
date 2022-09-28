@@ -194,7 +194,7 @@
     transition: var(--transition-default);
     font-weight: 500;
     padding: 20px 14px;
-    height: 60px;
+    height: 50px;
     white-space: nowrap;
 }
 
