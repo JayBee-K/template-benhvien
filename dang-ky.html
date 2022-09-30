@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Template Bệnh Viện</title>
+    <meta name="description" content="Template Cpanel">
+    <meta name="author" content="">
+
+    <meta property="og:title" content="Template Cpanel">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Template Cpanel">
+    <meta property="og:image" content="">
+
+    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/plugins/fancyBox/jquery.fancybox.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+
+    <style>
+        :root {
+            --primary-color: #0266ae;
+            --primary-hover: #0073c6;
+            --primary-rgb: 2, 102, 174;
+        }
+    </style>
+</head>
+<body>
+
+<div id="header" class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="header-wrapper d-flex align-items-center">
+                <div class="header-hamburger" id="call-navigation">
+                    <span></span>
+                </div>
+                <div class="header-logo">
+                    <a href="" class="d-inline-block">
+                        <img height="80px" class="mw-100 w-auto" src="./assets/images/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="header-actions">
+                    <div class="header-contact_item-login">
+                        <a href="">
+                            Đăng nhập
+                        </a>
+                    </div>
+                    <!--
+                    <div class="header-contact_item-login">
+                        <a href="">
+                            Đón tiếp
+                        </a>
+                    </div>
+                    -->
+                    <div class="header-search">
+                        <a href="javascript:void(0)" class="call-search">
+                            <i class="fas fa-search ms-0"></i>
+                        </a>
+                        <div class="search-form">
+                            <form action="">
+                                <div class="position-relative">
+                                    <input type="text" class="form-control"
+                                           placeholder="Nhập nội dung tìm kiếm...">
+                                    <button type="submit"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-information">
+                    <div class="header-information_title">
+                        BỆNH VIỆN ĐA KHOA ĐỨC GIANG
+                    </div>
+                    <div class="header-information_slogan">
+                        Chăm sóc sức khỏe của bạn là hạnh phúc của chúng tôi
+                    </div>
+                </div>
+                <div class="header-contact">
+                    <div class="header-content_item">
+                        <div class="header-contact_item-address">
+                            <i class="fas fa-map-marker-alt"></i>54 Trường Lâm, Phường Đức Giang, Long Biên, Hà
+                            Nội
+                        </div>
+                    </div>
+                    <div class="header-content_item d-flex align-items-center">
+                        <div class="header-contact_item-phone">
+                            <a href="">
+                                <span>
+                                    <i class="fas fa-phone-alt"></i>
+                                </span>
+                                Hotline: 0912.345.678
+                            </a>
+                        </div>
+                        <div class="header-contact_item-login d-none d-lg-flex">
+                            <a href="">
+                                <span>
+                                    <i class="fas fa-sign-in-alt"></i>
+                                </span>
+                                Đăng nhập
+                            </a>
+                        </div>
+                        <!--
+                            <div class="header-contact_item-login d-none d-lg-flex">
+                                <a href="">
+                                    <span>
+                                        <i class="fas fa-user-alt"></i>
+                                    </span>
+                                    Đón tiếp
+                                </a>
+                            </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-navigation">
+        <div class="container">
+            <div class="header-navigation_inner">
+                <ul class="list-unstyled mb-0" id="hasMenu">
+                    <li>
+                        <a href="">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="">Giới thiệu <i class="fas fa-caret-down"></i></a>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="">Giới thiệu chung</a>
+                            </li>
+                            <li>
+                                <a href="">Lịch sử hình thành và phát triển</a>
+                            </li>
+                            <li>
+                                <a href="">Chức năng và nhiệm vụ</a>
+                            </li>
+                            <li>
+                                <a href="">Thành tựu đạt được</a>
+                            </li>
+                            <li>
+                                <a href="">Cơ cấu tổ chức</a>
+                            </li>
+                            <li>
+                                <a href=""> Lĩnh vực hoạt động & nghiên cứu</a>
+                            </li>
+                            <li>
+                                <a href="">Sơ đồ trong bệnh viện</a>
+                            </li>
+                            <li>
+                                <a href="">Lãnh đạo bệnh viện qua các thời kỳ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Khoa phòng</a>
+                    </li>
+                    <li>
+                        <a href="">Tin tức <i class="fas fa-caret-down"></i></a>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="">Hoạt động bệnh viện</a>
+                            </li>
+                            <li>
+                                <a href="">Thông tin chuyên môn</a>
+                            </li>
+                            <li>
+                                <a href="">Hội nghị, hội thảo</a>
+                            </li>
+                            <li>
+                                <a href="">Thi đua & công đoàn</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Dịch vụ <i class="fas fa-caret-down"></i></a>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="">Trả kết quả online</a>
+                            </li>
+                            <li>
+                                <a href="">Đăng ký khám bệnh qua tổng đài</a>
+                            </li>
+                            <li>
+                                <a href="">Phòng Tiêm chủng</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Đào tạo - hợp tác</a>
+                    </li>
+                    <li>
+                        <a href="">Vắc xin covid 19 <i class="fas fa-caret-down"></i></a>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="">Thông tin chung</a>
+                            </li>
+                            <li>
+                                <a href="">Hỏi và Đáp</a>
+                            </li>
+                            <li>
+                                <a href="">Hộ chiếu vắc xin</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            Từ thiện
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Tuyển dụng <i class="fas fa-caret-down"></i>
+                        </a>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="">Lời ngõ</a>
+                            </li>
+                            <li>
+                                <a href="">Chính sách nhân sự</a>
+                            </li>
+                            <li>
+                                <a href="">Tin tuyển dụng</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation-search">
+                        <a href="javascript:void(0)" class="call-search">
+                            <i class="fas fa-search ms-0"></i>
+                        </a>
+                        <div class="search-form">
+                            <form action="">
+                                <div class="position-relative">
+                                    <input type="text" class="form-control"
+                                           placeholder="Nhập nội dung tìm kiếm...">
+                                    <button type="submit"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="header-overlay" class="header-overlay"></div>
+</div>
+<div id="main" class="main">
+    <div class="form-login">
+        <div class="container">
+            <div class="row justify-content-center justify-content-lg-between align-items-center">
+                <div class="col-lg-6">
+                    <div class="form-background">
+                        <img src="./assets/images/bg-login.svg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-9 col-md-7 col-lg-5 offset-lg-1">
+                    <div class="form-content">
+                        <div class="form-heading">
+                            <div class="title">
+                                Đăng ký hệ thống
+                            </div>
+                            <div class="text">
+                                Đặt lịch khám nhanh chóng và tiện ích nhất!
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="form-inner">
+                                    <form action="">
+                                        <div class="input-group">
+                                            <span class="input-group-text">
+                                                <i class="far fa-user-alt"></i>
+                                            </span>
+                                            <input type="text" class="form-control"
+                                                   placeholder="Email đăng nhập">
+                                            <div class="invalid-feedback">
+                                                Vui lòng nhập email đăng nhập
+                                            </div>
+                                        </div>
+                                        <div class="input-group input-group_password">
+                                            <span class="input-group-text">
+                                                <i class="far fa-lock-alt"></i>
+                                            </span>
+                                            <input type="password" class="form-control"
+                                                   placeholder="Mật khẩu đăng nhập">
+                                            <button class="btn btn-viewpass" type="button">
+                                                <i class="far fa-eye"></i>
+                                            </button>
+                                            <div class="invalid-feedback">
+                                                Vui lòng nhập mật khẩu đăng nhập
+                                            </div>
+                                        </div>
+                                        <div class="input-group input-group_password">
+                                            <span class="input-group-text">
+                                                <i class="far fa-lock-alt"></i>
+                                            </span>
+                                            <input type="password" class="form-control"
+                                                   placeholder="Mật khẩu đăng nhập">
+                                            <button class="btn btn-viewpass" type="button">
+                                                <i class="far fa-eye"></i>
+                                            </button>
+                                            <div class="invalid-feedback">
+                                                Vui lòng nhập lại mật khẩu đăng nhập
+                                            </div>
+                                        </div>
+                                        <div class="input-group d-flex align-items-center justify-content-between">
+                                            <div class="form-inner_check">
+                                                <input type="checkbox" id="remember">
+                                                <label for="remember">
+                                                    <i class="far fa-check-square"></i>
+                                                    Ghi nhớ đăng nhập
+                                                </label>
+                                            </div>
+                                            <div class="form-inner_link">
+                                                <a href="">Đăng ký tài khoản?</a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit" class="button-theme">
+                                                Đăng nhập
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-partner section-gap overflow-hidden" id="slider-partner">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading text-center">
+                    <div class="title">
+                        Đối tác của chúng tôi
+                    </div>
+                </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper h-auto">
+                        <div class="partner-item h-auto swiper-slide">
+                            <a href="" class="">
+                                <img src="./assets/images/partner/1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="partner-item h-auto swiper-slide">
+                            <a href="" class="">
+                                <img src="./assets/images/partner/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="partner-item h-auto swiper-slide">
+                            <a href="" class="">
+                                <img src="./assets/images/partner/3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="partner-item h-auto swiper-slide">
+                            <a href="" class="">
+                                <img src="./assets/images/partner/4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="partner-item h-auto swiper-slide">
+                            <a href="" class="">
+                                <img src="./assets/images/partner/7.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="partner-item h-auto swiper-slide">
+                            <a href="" class="">
+                                <img src="./assets/images/partner/1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="partner-item h-auto swiper-slide">
+                            <a href="" class="">
+                                <img src="./assets/images/partner/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="partner-item h-auto swiper-slide">
+                            <a href="" class="">
+                                <img src="./assets/images/partner/3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="partner-item h-auto swiper-slide">
+                            <a href="" class="">
+                                <img src="./assets/images/partner/4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="partner-item h-auto swiper-slide">
+                            <a href="" class="">
+                                <img src="./assets/images/partner/7.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="partner-item h-auto swiper-slide">
+                            <a href="" class="">
+                                <img src="./assets/images/partner/1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="partner-item h-auto swiper-slide">
+                            <a href="" class="">
+                                <img src="./assets/images/partner/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="partner-item h-auto swiper-slide">
+                            <a href="" class="">
+                                <img src="./assets/images/partner/3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="partner-item h-auto swiper-slide">
+                            <a href="" class="">
+                                <img src="./assets/images/partner/4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="partner-item h-auto swiper-slide">
+                            <a href="" class="">
+                                <img src="./assets/images/partner/7.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="partner-item h-auto swiper-slide">
+                            <a href="" class="">
+                                <img src="./assets/images/partner/1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="partner-item h-auto swiper-slide">
+                            <a href="" class="">
+                                <img src="./assets/images/partner/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="partner-item h-auto swiper-slide">
+                            <a href="" class="">
+                                <img src="./assets/images/partner/3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="partner-item h-auto swiper-slide">
+                            <a href="" class="">
+                                <img src="./assets/images/partner/4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="partner-item h-auto swiper-slide">
+                            <a href="" class="">
+                                <img src="./assets/images/partner/7.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer id="footer" class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-item">
+                        <div class="footer-item_text footer-item_decor">
+                            Thông tin liên hệ
+                        </div>
+                        <div class="footer-item_link">
+                            BỆNH VIỆN ĐA KHOA ĐỨC GIANG
+                        </div>
+                        <div class="footer-item_link">
+                            <a href=""><i class="fas fa-building me-1"></i>54 Trường Lâm, Phường Đức Giang
+                                ,Long
+                                Biên, Hà Nội
+                            </a>
+                        </div>
+                        <div class="footer-item_link">
+                            <a href=""><i class="fas fa-envelope me-1"></i>info@benhvienducgiang.com</a>
+                        </div>
+                        <div class="footer-item_link">
+                            <a href=""><i class="fas fa-globe me-1"></i>http://benhvienducgiang.com</a>
+                        </div>
+                        <div class="footer-item_link">
+                            <a href=""><i class="fas fa-mobile-alt me-1"></i>Phòng CTXH: 0986.953.505</a>
+                        </div>
+                        <div class="footer-item_link">
+                            <a href=""><i class="fas fa-phone-alt me-1"></i>Cấp cứu: 0243.6523299</a>
+                        </div>
+                        <div class="footer-item_link">
+                            <a href=""><i class="fas fa-phone-rotary me-1"></i>Đăng ký khám qua tổng đài:
+                                1900292919
+                            </a>
+                        </div>
+                        <div class="footer-item_link">
+                            <a href=""><i class="fas fa-phone-office me-1"></i>Hotline:0966.381.616</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-6">
+                    <div class="footer-item">
+                        <div class="footer-item_text footer-item_decor">
+                            Gói dịch vụ
+                        </div>
+                        <ul class="footer-item_list">
+                            <li>
+                                <a href="#">Đăng ký khám bệnh theo hẹn</a>
+                            </li>
+                            <li>
+                                <a href="">Trả kết quả online</a>
+                            </li>
+                            <li>
+                                <a href="">Lịch khám theo yêu cầu</a>
+                            </li>
+                            <li>
+                                <a href="">Thông tin tiêm chung Vắc Xin Covid 19</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-6">
+                    <div class="footer-item">
+                        <div class="footer-item_text footer-item_decor">
+                            Dịch vụ
+                        </div>
+                        <ul class="footer-item_list">
+                            <li>
+                                <a href="#">Các gói dịch vụ</a>
+                            </li>
+                            <li>
+                                <a href="">Đặt hẹn khám bệnh</a>
+                            </li>
+                            <li>
+                                <a href="">Lấy xét nghiệm tại nhà</a>
+                            </li>
+                            <li>
+                                <a href="">Sức khoẻ cộng đồng</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2 col-6">
+                    <div class="footer-item">
+                        <div class="footer-item_text footer-item_decor">
+                            Cộng đồng
+                        </div>
+                        <ul class="list-unstyled mb-0 footer-item_social">
+                            <li class="facebook">
+                                <a href="https://www.facebook.com/">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="telegram">
+                                <a href="https://www.facebook.com">
+                                    <i class="fab fa-telegram-plane"></i>
+                                </a>
+                            </li>
+                            <li class="twitter">
+                                <a href="https://www.facebook.com/">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="youtube">
+                                <a href="https://www.facebook.com/">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="text-center">Copyright 2022 © nencer.com</div>
+        </div>
+    </div>
+</footer>
+
+<script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript"
+        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/fancyBox/jquery.fancybox.js"></script>
+<script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+</html>

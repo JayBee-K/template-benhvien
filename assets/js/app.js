@@ -172,6 +172,20 @@
         }
     }
 
+    let handleViewPass = function () {
+        $('.btn-viewpass').click(function () {
+            if ($(this).parent().hasClass('show-pass')) {
+                $(this).parent().removeClass('show-pass');
+                $(this).parent().find('input').attr('type', 'password');
+                $(this).html('<i class="far fa-eye"></i>');
+            } else {
+                $(this).parent().addClass('show-pass');
+                $(this).parent().find('input').attr('type', 'text');
+                $(this).html('<i class="far fa-eye-slash"></i>');
+            }
+        });
+    }
+
     $(function () {
         initNavigation();
         initHeaderScroll();
@@ -181,5 +195,6 @@
         callSearchForm();
         initCounter();
         toggleCollapseMobile();
+        handleViewPass();
     });
 })(jQuery);
