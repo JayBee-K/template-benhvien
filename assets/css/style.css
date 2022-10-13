@@ -296,6 +296,8 @@
 .header .header-navigation .header-navigation_inner > ul > li > a > i {
 	font-size: .9em;
 	margin-left: 5px;
+	position: relative;
+	top: 2px;
 }
 
 .header .header-navigation .header-navigation_inner > ul > li > a.active,
@@ -2093,7 +2095,7 @@
 }
 
 .card-video_list .card-video .card-body {
-	padding: 0 10px !important;
+	padding: 0 !important;
 }
 
 .card-video_list .card-video .card-body .card-title {
@@ -2104,8 +2106,19 @@
 	-webkit-line-clamp: 2;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
+	padding: 0;
 }
 
 .card-video_list .card-video + .card-video {
-	margin-top: 15px;
+	margin-top: 5px;
+	padding-top: 5px;
+	border-top: 1px dotted var(--bs-gray-200) !important;
+}
+
+.card-video .card-title {
+	padding: 10px 0 0;
+	font-size: 1.1em;
+	color: var(--primary-color);
+	font-weight: 500;
+	line-height: 1.3;
 }
